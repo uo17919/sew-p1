@@ -116,6 +116,7 @@ iframe {
 
 p {
 	text-align:justify;
+	padding: 0.5em;
 }
 
 h2 {
@@ -240,7 +241,7 @@ footer > p {
 	grid-template-columns: auto auto auto auto auto;
 	width: 100%;
 	font-size: 1em;
-	padding: 0em;
+	/*padding: 0em;*/
   }
 
   cargumento {
@@ -270,5 +271,9 @@ footer > p {
   
   video {
 	width: 95%;
+  }
+  
+  table {
+	width: 60%;
   }
 }
