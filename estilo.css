@@ -1,0 +1,278 @@
+html, body {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'img h1 audio'
+    'menu section section'
+    'footer footer footer';
+  justify-content: left;	
+  
+  grid-template-columns: 20em 40em 20em;
+  grid-template-rows: 15em auto 5em;
+    
+  width: 80em;
+  min-height: 55em;
+  height: 100vh;
+  margin: auto;
+  
+  font-family:Geneva, Arial, Helvetica, sans-serif;
+  color: black;
+  
+  background-color: blue;
+  
+}
+
+main > h1, menu, section  {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-size: 3em;
+}
+
+img {
+	grid-area: img;
+	display: grid;
+	float: left;
+	width: 18em;
+	background-color: yellow;
+}
+
+h1 { 
+	grid-area: h1; 
+	display: grid;			   
+	text-align:center;	
+	background-color: yellow;
+	}
+
+audio {
+	grid-area: audio;
+	display: grid;
+    top: 50%;
+    transform: translateY(50%);
+	
+	background-color: yellow;
+}
+
+nav {
+	grid-area: menu;
+	display: grid;
+	grid-template-areas:
+    'argumento'
+	'reparto'
+	'galeria'
+	'trailer'
+	'premios'
+	
+	float: left;
+	width: 80%;
+	font-size: 1.5em;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1.5em;
+}
+
+cargumento {
+	grid-area: argumento;
+}
+
+creparto {
+	grid-area: reparto;
+}
+
+cgaleria {
+	grid-area: galeria;
+}
+
+ctrailer {
+	grid-area: trailer;
+}
+
+cpremios {
+	grid-area: premios;
+}
+
+section {
+	grid-area: section;
+	float: left;
+	width: 100%;
+	font-size: 1.1em;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+    border:none;
+	text-align:justify;
+}
+
+p {
+	text-align:justify;
+}
+
+h2 {
+	text-align: center;
+	color: gray;
+}
+
+li {
+	line-height: 1.8;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: left;
+	margin-left: 3.3em;
+	list-style-type: square;
+}
+
+figure {
+    float: left;
+	clear: none;
+}
+
+figure > img {
+	margin: 0.5em;
+    border: 0.1em solid black;
+    float: left;
+	clear:both;
+	width: auto;
+	height: 20em;
+}
+
+figcaption {
+    float: left;
+	clear:both;
+}
+
+video {
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%);
+}
+
+caption {
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	color: gray;
+}
+
+table {
+	position: absolute;
+	left: 50%;
+    transform: translate(-50%);
+	line-height: 1.8;
+	text-align: left;
+	width: 75%;
+	border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table, th, td {
+    border: 0.1em solid gray;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, tg {
+	padding: 1em;
+}
+
+footer {
+	grid-area: footer;
+}
+
+footer > a > img {
+	float: left;
+	height: 2em;
+	width: auto;	
+}
+
+footer > p {
+	float: right;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  main {
+  display: grid;
+  grid-template-areas:
+    'h1 img'
+	'audio audio'
+    'menu menu'
+	'section section'
+    'footer footer';
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 10% 10% 10% 55% 5%;
+	width: 100%;
+	min-height: 100vh;
+  }
+  
+  main > h1, menu, section  {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  img {
+	grid-area: img;
+	float: right;
+	width: 60%;
+	margin:1em;
+  }
+  
+  audio {
+	grid-area: audio;
+	float: left;
+	width: 40%;
+	height: 40%;
+  }
+
+  nav {
+	grid-area: menu;
+	display: grid;
+	grid-template-areas:
+    'argumento reparto galeria trailer premios';
+	grid-template-columns: auto auto auto auto auto;
+	width: 100%;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0em;
+  }
+
+  cargumento {
+	grid-area: argumento;
+	backgroung-color: yellow;
+	width: 10%;
+  }
+
+  creparto {
+	grid-area: reparto;
+	width: 10%;
+  }
+
+  cgaleria {
+	grid-area: galeria;
+	width: 10%;
+  }
+
+  ctrailer {
+	grid-area: trailer;
+	width: 10%;
+  }
+
+  cpremios {
+	grid-area: premios;
+	width: 10%;
+  }
+  section {
+    width: 100%;
+  }
+  
+  video {
+	width: 95%;
+  }
+}
