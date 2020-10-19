@@ -64,7 +64,7 @@ nav {
 	'reparto'
 	'galeria'
 	'trailer'
-	'premios'
+	'premios';
 	
 	float: left;
 	width: 80%;
@@ -245,7 +245,7 @@ footer > p {
 
   cargumento {
 	grid-area: argumento;
-	backgroung-color: yellow;
+	background-color: yellow;
 	width: 10%;
   }
 
