@@ -161,6 +161,7 @@ caption {
 	font-size: 2em;
 	text-align: center;
 	color: gray;
+	background-color: white;
 }
 
 table {
@@ -171,13 +172,12 @@ table {
 	text-align: left;
 	width: 75%;
 	border: 1px solid black;
-    border-collapse: collapse;
-    background-color: white;
 }
 
 table, th, td {
     border: 0.1em solid gray;
     border-collapse: collapse;
+	color:black;
     background-color: white;
 }
 
