@@ -20,9 +20,8 @@ main {
   margin: auto;
   
   font-family:Geneva, Arial, Helvetica, sans-serif;
-  color: black;
-  background-color: white;
-  
+/*  color: black;
+  background-color: white;*/
 }
 
 main > menu  {
@@ -37,7 +36,6 @@ img {
 	display: grid;
 	float: left;
 	width: 12em;
-	
 	color: black;
 	background-color: white;
 }
@@ -46,7 +44,6 @@ h1 {
 	grid-area: h1; 
 	display: grid;			   
 	text-align:center;
-	
 	color: black;
 	background-color: white;
 	}
