@@ -117,7 +117,7 @@ p {
 
 h2 {
 	text-align: center;
-	color: red;
+	color: black;
 	background-color: white;
 }
 
@@ -158,7 +158,7 @@ video {
 caption {
 	font-weight: bold;
 	font-size: 1.6em;
-	color: red;
+	color: black;
 	background-color: white;
   }
   
