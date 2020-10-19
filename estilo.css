@@ -214,7 +214,7 @@ footer > p {
 	'section section'
     'footer footer';
 	grid-template-columns: 50% 50%;
-	grid-template-rows: 10% 10% 10% 60% 10%;
+	grid-template-rows: 4em 4em 4em auto 4em;
 	width: 100%;
 	min-height: 100vh;
 	/*margin: auto;*/
@@ -227,7 +227,7 @@ footer > p {
   
   img {
 	float: right;
-	width: 60%;
+	width: 50%;
 	margin:1em;
   }
   
