@@ -21,15 +21,15 @@ main {
   
   font-family:Geneva, Arial, Helvetica, sans-serif;
   color: black;
-  
   background-color: white;
   
 }
 
 main > h1, menu  {
-  color: black;
   text-align: left;
   font-size: 3em;
+  color: black;
+  background-color: white;
 }
 
 img {
