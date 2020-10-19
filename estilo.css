@@ -12,7 +12,7 @@ main {
   justify-content: left;	
   
   grid-template-columns: 20em 40em 20em;
-  grid-template-rows: 13em auto 5em;
+  grid-template-rows: 10em auto 5em;
     
   width: 80em;
   min-height: 55em;
@@ -36,7 +36,7 @@ img {
 	grid-area: img;
 	display: grid;
 	float: left;
-	width: 18em;
+	width: 12em;
 	
 	color: black;
 	background-color: white;
@@ -70,7 +70,6 @@ nav {
 	'galeria'
 	'trailer'
 	'premios';
-	
 	float: left;
 	width: 80%;
 	font-size: 1.5em;
@@ -110,17 +109,15 @@ iframe {
 	height: 89%;
 	width: 100%;
     border:none;
-	/*text-align:justify;*/
 }
 
 p {
-	text-align:justify;
 	padding: 0.5em;
 }
 
 h2 {
 	text-align: center;
-	color: gray;
+	color: red;
 	background-color: white;
 }
 
@@ -160,12 +157,10 @@ video {
 
 caption {
 	font-weight: bold;
-	font-size: 2em;
-	text-align: center;
-	color: gray;
-	background-color: white;
-}
-
+	font-size: 1.6em;
+	color: red;
+  }
+  
 table {
 	position: absolute;
 	left: 50%;
@@ -173,7 +168,6 @@ table {
 	line-height: 1.8;
 	text-align: left;
 	width: 75%;
-	/*border: 1px solid black;*/
 }
 
 table, th, td {
@@ -184,7 +178,7 @@ table, th, td {
 }
 
 th, tg {
-	padding: 1em;
+	padding: 0.7em;
 }
 
 footer {
@@ -220,13 +214,12 @@ footer > p {
   }
   
   main > h1  {
-	/*text-align: center;				   */
     font-size: 2em;
   }
   
   img {
 	float: right;
-	width: 40%;
+	width: 40%; /*33*/
 	margin:1em;
   }
   
@@ -241,45 +234,22 @@ footer > p {
     'argumento reparto galeria trailer premios';
 	grid-template-columns: auto auto auto auto auto;
 	width: 86%;
-	font-size: 1em;
-	/*padding: 0em;*/
+	font-size: 01em;
   }
 
-/*  cargumento {
-	color: white;
-	background-color: yellow;
-	width: 10%;
-  }
-
-  creparto {
-	width: 10%;
-  }
-
-  cgaleria {
-	width: 10%;
-  }
-
-  ctrailer {
-	width: 10%;
-  }
-
-  cpremios {
-	width: 10%;
-  }
-  */
   section {
     width: 100%;
   }
   
-  h2 {
+  h2, caption {
 	font-size: 1em;
   }
 
   video {
 	width: 95%;
   }
-  
-  /*table, th {
+
+th {
 	width: 10%;
-  }*/
+}
 }
