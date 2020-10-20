@@ -20,7 +20,7 @@ p {
 }
 
 /*Especificidad del selector: (0, 0, 1)*/
-h2 {
+h1 {
 	text-align: center;
 	color: black;
 	background-color: white;
@@ -106,7 +106,7 @@ th, td {
   }
 
   /*Especificidad del selector: (0, 0, 1)*/
-  h2, caption {
+  h1, caption {
 	font-size: 1em;
   }
 
