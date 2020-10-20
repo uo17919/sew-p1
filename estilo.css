@@ -209,7 +209,7 @@ footer > p {
   }
   
   /*Especificidad del selector: (0, 0, 1)*/
-  h2, caption {
+  h2 {
 	font-size: 1em;
   }
 }
