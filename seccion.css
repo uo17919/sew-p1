@@ -1,120 +1,32 @@
+/*Especificidad del selector: (0, 0, 1)*/
 html, body {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 body {
   
   width: 58em;
   min-height: 25em;
   height: auto;
-  /*margin: auto;*/
   
   font-family:Geneva, Arial, Helvetica, sans-serif;
-/*  color: black;
-  background-color: white;*/
 }
 
-/*main > menuheader  {
-  grid-area: headerarea;
-  display: grid;
-  grid-template-areas:
-	'imgarea h1area audioarea';
-  grid-template-columns:auto auto auto;
-  grid-template-rows: 10em;
-  text-align: left;
-  font-size: 3em;
-  color: black;
-  background-color: white;
-}
-
-img {
-	grid-area: imgarea;
-	/*display: grid;*/
-	/*float: left;
-	width: 5em;
-	color: black;
-	background-color: white;
-}
-
-h1 { 
-	grid-area: h1area; 
-	/*display: grid;			   
-	text-align:center;
-	color: black;
-	background-color: white;
-	}
-
-audio {
-	grid-area: audioarea;
-	/*display: grid;
-    top: 50%;
-    transform: translateY(50%);
-	
-	color: black;
-	background-color: white;
-}
-
-nav {
-	grid-area: menuarea;
-	display: grid;
-	grid-template-areas:
-    'argumentoarea'
-	'repartoarea'
-	'galeriaarea'
-	'trailerarea'
-	'premiosarea';
-	float: left;
-	width: 80%;
-	font-size: 1.5em;
-	color: black;
-	background-color: white;
-	padding: 1.5em;
-}
-
-cargumento {
-	grid-area: argumentoarea;
-}
-
-creparto {
-	grid-area: repartoarea;
-}
-
-cgaleria {
-	grid-area: galeriaarea;
-}
-
-ctrailer {
-	grid-area: trailerarea;
-}
-
-cpremios {
-	grid-area: premiosarea;
-}
-
-section {
-	grid-area: sectionarea;
-	/*float: left;
-	width: 100%;
-	font-size: 1.1em;
-}
-
-iframe {
-	height: 89%;
-	width: 100%;
-    border:none;
-}
-*/
+/*Especificidad del selector: (0, 0, 1)*/
 p {
 	padding: 0.5em;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 h2 {
 	text-align: center;
 	color: black;
 	background-color: white;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 li {
 	line-height: 1.8;
 	font-weight: bold;
@@ -124,11 +36,13 @@ li {
 	list-style-type: square;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 figure {
     float: left;
 	clear: none;
 }
 
+/*Especificidad del selector: (0, 0, 2)*/
 figure > img {
 	margin: 0.5em;
     border: 0.1em solid black;
@@ -138,17 +52,20 @@ figure > img {
 	height: 20em;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 figcaption {
     float: left;
 	clear:both;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 video {
 	position: absolute;
 	left: 50%;
     transform: translate(-50%);
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 caption {
 	font-weight: bold;
 	font-size: 1.6em;
@@ -156,6 +73,7 @@ caption {
 	background-color: white;
   }
   
+/*Especificidad del selector: (0, 0, 1)*/
 table {
 	position: absolute;
 	left: 50%;
@@ -165,6 +83,7 @@ table {
 	width: 75%;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 table, th, td {
     border: 0.1em solid gray;
     border-collapse: collapse;
@@ -172,28 +91,31 @@ table, th, td {
     background-color: white;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 th, td {
 	padding: 0.7em;
 }
 
 
 @media only screen and (max-width: 768px) {
-body {
+  /* For mobile phones: */
+  /*Especificidad del selector: (0, 0, 1)*/
+  body {
 	width: auto;
-	
 	height: auto;
-	/*min-height: 25em;
-	margin: auto;*/
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   h2, caption {
 	font-size: 1em;
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   video {
 	width: 95%;
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   th {
 	width: 8%;
   }

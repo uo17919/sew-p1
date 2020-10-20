@@ -1,30 +1,27 @@
+/*Especificidad del selector: (0, 0, 1)*/
 html, body {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
 
-/*main*/body {
+/*Especificidad del selector: (0, 0, 1)*/
+body {
   display: grid;
   grid-template-areas:
-    'headerarea headerarea' /*'img h1 audio'*/
+    'headerarea headerarea'
     'menuarea sectionarea'
-    'footerarea footerarea';
-  /*justify-content: left;*/	
-  
+    'footerarea footerarea';  
   grid-template-columns: 20em 60em;
   grid-template-rows: 12em auto 5em;
     
   width: 80em;
   min-height: 55em;
   height: 100vh;
-  /*margin: auto;*/
-  
   font-family:Geneva, Arial, Helvetica, sans-serif;
-/*  color: black;
-  background-color: white;*/
 }
 
-/*main > menu*/header  {
+/*Especificidad del selector: (0, 0, 1)*/
+header  {
   grid-area: headerarea;
   display: grid;
   grid-template-areas:
@@ -37,33 +34,33 @@ html, body {
   background-color: white;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 img {
 	grid-area: imgarea;
-	/*display: grid;*/
-	/*float: left;*/
 	width: 5em;
 	color: black;
 	background-color: white;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 h1 { 
 	grid-area: h1area; 
-	/*display: grid;*/			   
 	text-align:center;
 	color: black;
 	background-color: white;
 	}
 
+/*Especificidad del selector: (0, 0, 1)*/
 audio {
 	grid-area: audioarea;
-	/*display: grid;*/
-    top: 50%;
+	top: 50%;
     transform: translateY(50%);
 	
 	color: black;
 	background-color: white;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 nav {
 	grid-area: menuarea;
 	display: grid;
@@ -81,120 +78,70 @@ nav {
 	padding: 1.5em;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 cargumento {
 	grid-area: argumentoarea;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 creparto {
 	grid-area: repartoarea;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 cgaleria {
 	grid-area: galeriaarea;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 ctrailer {
 	grid-area: trailerarea;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 cpremios {
 	grid-area: premiosarea;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 section {
 	grid-area: sectionarea;
-	/*float: left;*/
 	width: 100%;
 	font-size: 1.1em;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 iframe {
 	height: 89%;
 	width: 100%;
     border:none;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 p {
 	padding: 0.5em;
 }
 
+/*Especificidad del selector: (0, 0, 1)*/
 h2 {
 	text-align: center;
 	color: black;
 	background-color: white;
 }
 
-li {
-	line-height: 1.8;
-	font-weight: bold;
-	font-size: 1.2em;
-	text-align: left;
-	margin-left: 3.3em;
-	list-style-type: square;
-}
-
-figure {
-    float: left;
-	clear: none;
-}
-
-figure > img {
-	margin: 0.5em;
-    border: 0.1em solid black;
-    float: left;
-	clear:both;
-	width: auto;
-	height: 20em;
-}
-
-figcaption {
-    float: left;
-	clear:both;
-}
-
-video {
-	position: absolute;
-	left: 50%;
-    transform: translate(-50%);
-}
-
-caption {
-	font-weight: bold;
-	font-size: 1.6em;
-	color: black;
-	background-color: white;
-  }
-  
-table {
-	position: absolute;
-	left: 50%;
-    transform: translate(-50%);
-	line-height: 1.8;
-	text-align: left;
-	width: 75%;
-}
-
-table, th, td {
-    border: 0.1em solid gray;
-    border-collapse: collapse;
-	color:black;
-    background-color: white;
-}
-
-th {
-	padding: 0.7em;
-}
-
+/*Especificidad del selector: (0, 0, 1)*/
 footer {
 	grid-area: footerarea;
 }
 
+/*Especificidad del selector: (0, 0, 3)*/
 footer > a > img {
 	float: left;
 	height: 2em;
 	width: auto;	
 }
 
+/*Especificidad del selector: (0, 0, 2)*/
 footer > p {
 	float: right;
 	font-size: 0.9em;
@@ -203,6 +150,8 @@ footer > p {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+
+  /*Especificidad del selector: (0, 0, 1)*/  
   body {
   grid-template-areas:
     'headerarea headerarea'
@@ -214,9 +163,9 @@ footer > p {
 	grid-template-rows: 3.5em 2em 3.5em auto 3.5em;
 	width: 100%;
 	min-height: 100vh;
-	/*margin: auto;*/
   }
   
+  /*Especificidad del selector: (0, 0, 1)*/
   header  {
 	grid-template-areas:
     'imgarea h1area'
@@ -225,23 +174,27 @@ footer > p {
 	grid-template-rows:auto auto;
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   h1  {
 	font-size: 0.5em;
 	text-align: left;
   }
   
+  /*Especificidad del selector: (0, 0, 1)*/
   img {
 	float: left;
-	width: 50%; /*33*/
+	width: 50%;
 	margin:0.5em;
   }
   
+  /*Especificidad del selector: (0, 0, 1)*/
   audio {
 	float: right;
 	width: 65%;
 	height: 25%;
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   nav {
 	grid-template-areas:
     'argumentoarea repartoarea galeriaarea trailerarea premiosarea';
@@ -250,19 +203,13 @@ footer > p {
 	font-size: 01em;
   }
 
+  /*Especificidad del selector: (0, 0, 1)*/
   section {
     width: 100%;
   }
   
+  /*Especificidad del selector: (0, 0, 1)*/
   h2, caption {
 	font-size: 1em;
-  }
-
-  video {
-	width: 95%;
-  }
-
-  th {
-	width: 8%;
   }
 }
